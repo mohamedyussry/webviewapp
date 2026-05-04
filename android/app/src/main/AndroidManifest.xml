@@ -5,6 +5,7 @@
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
+            android:label="94vibes"
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""
