@@ -7,8 +7,8 @@ void main() {
   // Set system status bar color to match our app theme
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
-      statusBarColor: Colors.orange,
-      statusBarIconBrightness: Brightness.light,
+      statusBarColor: Colors.white,
+      statusBarIconBrightness: Brightness.dark,
     ),
   );
   runApp(const MyApp());
@@ -154,25 +154,6 @@ class _WebViewScreenState extends State<WebViewScreen> {
         }
       },
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.orange,
-          foregroundColor: Colors.white,
-          title: const Text(
-            '94vibes',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios),
-            onPressed: () async {
-              if (await controller.canGoBack()) {
-                await controller.goBack();
-              }
-            },
-          ),
-          centerTitle: true,
-          elevation: 4,
-          shadowColor: Colors.black.withOpacity(0.5),
-        ),
         body: Container(
           color: Colors.white,
           child: SafeArea(
